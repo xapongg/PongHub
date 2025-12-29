@@ -1,7 +1,5 @@
 -- Load WindUI
-local WindUI = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/Footagesus/WindUI/main/source.lua"
-))()
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 -- Window
 local Window = WindUI:CreateWindow({
@@ -60,4 +58,5 @@ Settings:CreateButton({
         Window:Destroy()
     end
 })
+
 
