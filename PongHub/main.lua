@@ -41,10 +41,11 @@ if Detected then
         Name = "Load "..Detected.Name,
         Callback = function()
             loadstring(game:HttpGet(
-                "https://raw.githubusercontent.com/USERNAME/PongHub/main/games/"..Detected.File
+                "https://raw.githubusercontent.com/xapongg/PongHub/refs/heads/main/PongHub/games/"..Detected.File
             ))()
         end
     })
+
 else
     Home:CreateLabel("❌ Game not supported")
     GameTab:CreateLabel("No scripts available")
@@ -59,3 +60,4 @@ Settings:CreateButton({
         Window:Destroy()
     end
 })
+
