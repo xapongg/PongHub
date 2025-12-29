@@ -4,9 +4,7 @@ local RunService = game:GetService("RunService")
 local LP = Players.LocalPlayer
 
 -- UI
-local WindUI = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/Footagesus/WindUI/main/source.lua"
-))()
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
     Title = "PongHub - Fish It",
@@ -116,3 +114,4 @@ WindUI:Notify({
     Content = "Fish It loaded successfully 🐟",
     Duration = 4
 })
+
